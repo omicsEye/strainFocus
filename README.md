@@ -1,11 +1,11 @@
-# seqSight: #
+# strainFocus: #
 
-**seqSight** is a tool to jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data; it is designed to provided maximum utility to the user by incorporating a number of analysis modules for the quantification of not only bacterial strains but also gene families and biosynthetic gene clusters. seqSight also incorporates quality control modules and visualization tools.
+**strainFocus** is a tool to jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data; it is designed to provided maximum utility to the user by incorporating a number of analysis modules for the quantification of not only bacterial strains but also gene families and biosynthetic gene clusters. strainFocus also incorporates quality control modules and visualization tools.
  
 ---
 
 # Citation: #
- Xinyang Zhang, Tyson Dawson, Keith A. Crandall, Ali Rahnavard (2022+), **seqSight: jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data**, https://github.com/omicsEye/seqSight
+ Xinyang Zhang, Tyson Dawson, Keith A. Crandall, Ali Rahnavard (2022+), **strainFocus: jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data**, https://github.com/omicsEye/strainFocus
 
 # Attention # 
 ----
@@ -13,19 +13,19 @@
 Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common questions before open issue thread there.
 
 ----
-# seqSight user manual
+# strainFocus user manual
 
 ## Contents ##
 * [Features](#features)
-* [seqSight](#seqSight)
+* [strainFocus](#strainFocus)
     * [Requirements](#requirements)
     * [Installation](#installation)
-* [Getting started with seqSight](#getting-started-with-seqSight)
-    * [Test seqSight](#test-seqSight)
+* [Getting started with strainFocus](#getting-started-with-strainFocus)
+    * [Test strainFocus](#test-strainFocus)
     * [Options](#options) 
     * [Input](#input)
     * [Output](#output)  
-* [seqSight pipelines](#seqSight-pipelines)
+* [strainFocus pipelines](#strainFocus-pipelines)
    * [Taxonomic profiling](#taxonomic-profiling)
    * [Biosynthetic gene clusters profiling](Biosynthetic-gene-clusters-profiling)
    * [Gene families profiling](#Gene-families-profiling)
@@ -38,7 +38,7 @@ Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common
 * [Support](#Support)
 ------------------------------------------------------------------------------------------------------------------------------
 # Features #
-1. Generality: seqSight uses sequence reads as input with filtering and QC.
+1. Generality: strainFocus uses sequence reads as input with filtering and QC.
 
 2. Mapping database
     * Taxonomic Reference Genomes
@@ -56,9 +56,9 @@ Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common
     * Cladogram generation w/ annotations
 
 
-![overall-fig](https://github.com/omicsEye/seqSight/blob/main/img/fig1_general_pipeline_v2.png)
+![overall-fig](https://github.com/omicsEye/strainFocus/blob/main/img/fig1_general_pipeline_v2.png)
     
-# seqSight #
+# strainFocus #
 
 ## REQUIREMENTS ##
 * [Matplotlib](http://matplotlib.org/)
@@ -75,7 +75,7 @@ Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common
 Linux based and Mac OS:
 * First open a terminal 
 ```
-$ sudo pip3 install seqSight
+$ sudo pip3 install strainFocus
 ```
 If you use `sudo` then you need provide admin password and teh software will be installed for all users.
 
@@ -86,10 +86,10 @@ Windows OS:
 then run the following command 
 
 ```
-$ pip3 install seqSight
+$ pip3 install strainFocus
 ```
 
-* You can replace `pip3` by `pip` if you have only Python 3 installed on your computer. `pip3` specifies to install `seqSight` for Python 3. 
+* You can replace `pip3` by `pip` if you have only Python 3 installed on your computer. `pip3` specifies to install `strainFocus` for Python 3. 
 
 <span style="color:#033C5A">*If you have a working conda on your system, you can safely skip to step three*</span>.
 
@@ -108,22 +108,22 @@ conda 4.9.2
 <span style="color:#fc0335">if not, you must make *conda* available to your system for further steps.</span>
 if you have problems adding conda to PATH, you can find instructions [here](https://docs.anaconda.com/anaconda/user-guide/faq/).
   
-* Third create a new conda environment (let's call it seqSight_env) with the following command:
+* Third create a new conda environment (let's call it strainFocus_env) with the following command:
 ```
-conda create --name seqSight_env python=3.8
+conda create --name strainFocus_env python=3.8
 ```
 * Then activate your conda environment:
 ```commandline
-conda activate seqSight_env 
+conda activate strainFocus_env 
 ```
-* Finally, install *seqSight*:
+* Finally, install *strainFocus*:
 
 * You can directly install if from GitHub:
 ```commandline
-python -m pip install git+https://github.com/omicsEye/seqSight
+python -m pip install git+https://github.com/omicsEye/strainFocus
 ```
 * or before running the following line you should change your directory to the same directory that you have cloned the 
-  seqSight repo:
+  strainFocus repo:
 ```commandline
 python -m pip install .
 ```
@@ -132,26 +132,26 @@ python -m pip install .
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-# Getting Started with seqSight #
+# Getting Started with strainFocus #
 
-## Test seqSight ##
+## Test strainFocus ##
 
-To test if seqSight is installed correctly, you may run the following command in the terminal:
+To test if strainFocus is installed correctly, you may run the following command in the terminal:
 
 ```
 #!cmd
 
-seqSight -h
+strainFocus -h
 
 ```
-Which yields seqSight command line options.
+Which yields strainFocus command line options.
 
 
 ## Options ##
 
 ```
-$ seqSight -h
-usage: seqSight [-h] [--version] [-i INPUT] -o OUTPUT 
+$ strainFocus -h
+usage: strainFocus [-h] [--version] [-i INPUT] -o OUTPUT 
  
 optional arguments:
   -h, --help            show this help message and exit
@@ -176,27 +176,27 @@ A list of all options are provided in #options section.
 
 ## Output ##
 ```
-$ seqSight -h
-usage: seqSight [-h] 
+$ strainFocus -h
+usage: strainFocus [-h] 
 
 ```
-# seqSight piplines # 
+# strainFocus piplines # 
 ## Taxonomic profiling ##
 1. Bayesian Reassignment
 
 
-![tax1](https://github.com/omicsEye/seqSight/blob/main/img/taxProfile1.png)
+![tax1](https://github.com/omicsEye/strainFocus/blob/main/img/taxProfile1.png)
 
 2. Taxonomic profiling
 
 
-![tax2](https://github.com/omicsEye/seqSight/blob/main/img/taxProfile2.png)
+![tax2](https://github.com/omicsEye/strainFocus/blob/main/img/taxProfile2.png)
 
 
 3. Visualization
 
 
-![tax3](https://github.com/omicsEye/seqSight/blob/main/img/taxProfile3.png)
+![tax3](https://github.com/omicsEye/strainFocus/blob/main/img/taxProfile3.png)
 
 ## Utilities ##
 
@@ -205,9 +205,9 @@ usage: seqSight [-h]
 
 
 ## Visulization Demo ##
-1. Go to the seqSight/Notebooks, download FiveTargetNum.tsv, FiveTargetReads.tsv and stackedplot.ipynb.
-2. FiveTargetNum.tsv and FiveTargetReads.tsv are two output files that generated from seqSight.
+1. Go to the strainFocus/Notebooks, download FiveTargetNum.tsv, FiveTargetReads.tsv and stackedplot.ipynb.
+2. FiveTargetNum.tsv and FiveTargetReads.tsv are two output files that generated from strainFocus.
 3. Run the code either on the google colab or in your loacl environment.
 4. The stacked bar plot show the composition distribution and their corresponding reads.
 5. The final look could be liked the following:
-![stacked plot](https://github.com/omicsEye/seqSight/blob/main/Notebooks/stackedplot.png)
+![stacked plot](https://github.com/omicsEye/strainFocus/blob/main/Notebooks/stackedplot.png)
