@@ -42,7 +42,7 @@ Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common
 3. Optimized computation
 4. User-friendly software
 5. Provides a predictive power of most discriminative positions in a sequencing data
-# DeepBreaks #
+# strainFocus #
 ## strainFocus approach ##
 ![strainFocus Workflow overview](img/fig1_overview.png)
 
