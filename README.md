@@ -44,7 +44,7 @@ Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common
 5. Multiple outputs for further downstream analysis
 # strainFocus #
 ## strainFocus approach ##
-![StrainFocus Overview Diagram](/StrainFocusOverview-01.png)
+![StrainFocus Overview Diagram](/StrainFocusOverview-01.png|width=300px|height=371px)
 ## INSTALLATION ##
 
 ```commandline
