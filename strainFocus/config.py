@@ -1,8 +1,8 @@
 #default values for user options
 version = '1.0.0'
 input_table = ''
-output_folder = '~/Documents/GitHub/seqSight/seqSight/Test'
-basename = 'seqSight'
+output_folder = '~/Documents/GitHub/strainFocus/strainFocus/Test'
+basename = 'strainFocus'
 log_level = 'DEBUG'
 verbose = 'DEBUG'
 nprocesses = 1

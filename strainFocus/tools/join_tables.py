@@ -16,7 +16,7 @@ import os
 import shutil
 import re
 
-from seqSight.tools import util
+from strainFocus.tools import util
 
 GENE_TABLE_DELIMITER = "\t"
 

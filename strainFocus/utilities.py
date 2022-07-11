@@ -1,6 +1,6 @@
 # from __future__ import print_function
 """
-seqSight utilities
+strainFocus utilities
 """
 import re
 import sys

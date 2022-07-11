@@ -47,7 +47,7 @@ MAINTAINER_EMAIL = "tysondawson@gmail.com, kathyzhang415@gmail.com, gholamali.ra
 COUNTER_URL = "https://github.com/omicsEye/seqSight/blob/master/README.md"
 counter_file = "README.md"
 if not os.path.isfile(counter_file):
-    print("Downloading counter file to track seqSight downloads" +
+    print("Downloading counter file to track strainFocus downloads" +
           " since the global PyPI download stats are currently turned off.")
     try:
         pass  # file, headers = urlretrieve(COUNTER_URL,counter_file)
@@ -56,13 +56,13 @@ if not os.path.isfile(counter_file):
 with open('requirements.txt') as f:
     required = f.read().splitlines()
 setup(
-    name="seqSight",
+    name="strainFocus",
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
     version=VERSION,
     license="MIT",
-    description="seqSight: jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data",
-    long_description="seqSight: jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data.",
+    description="strainFocus: jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data",
+    long_description="strainFocus: jointly profile microbial strains, genes, and biosynthetic gene clusters from metagenomics data.",
     url="http://github.com/omicsEye/seqSight",
     keywords=['Microbiome', 'metagenomics', 'gene', "biosynthetic gene clusters", "Microbial profiling"],
     platforms=['Linux', 'MacOS', "Windows"],
@@ -72,9 +72,9 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'seqSight = seqSight.seqSight:main',
-            'seqSight_join_tables = seqSight.tools.join_tables:main'
+            'strainFocus = strainFocus.strainFocus:main',
+            'seqSight_join_tables = strainFocus.tools.join_tables:main'
         ]},
-    #test_suite='seqSight.tests.seqSight_test',
+    #test_suite='strainFocus.tests.seqSight_test',
     zip_safe=False
 )
