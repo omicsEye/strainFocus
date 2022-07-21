@@ -1,4 +1,4 @@
-# strainFocus: #
+# strainFocus#
 
 **strainFocus** is a workflow to identify strains of bacteria present in metagenomic samples; it is designed to present visualizations to the user that facilitate the interpretation of evolutionary relationships between strains of bacteria found in their samples and among publicly available genomes of the same species.
 
@@ -48,7 +48,7 @@ Please check our [omicsEye Support Forum](https://forum.omicsEye.org) for common
 ## INSTALLATION ##
 
 ```commandline
-python -m pip install git+https://github.com/omicsEye/deepbreaks
+python -m pip install git+https://github.com/omicsEye/strainFocus
 ```
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -107,8 +107,9 @@ group of the position (we group all the collinear positions together)
 6. box plot (regression) or stacked bar plot (classification) for top positions of each model.
 
 ## Demo ##
+The detailed otions will come soon!!!
 ```commandline
-strainFocus --input myReads1.fastq
+strainFocus --input myReads1.fastq --output strainFocus_demo_output
 ```
 
 # Support #
