@@ -1,4 +1,4 @@
-# strainFocus#
+# strainFocus #
 
 **strainFocus** is a workflow to identify strains of bacteria present in metagenomic samples; it is designed to present visualizations to the user that facilitate the interpretation of evolutionary relationships between strains of bacteria found in their samples and among publicly available genomes of the same species.
 
