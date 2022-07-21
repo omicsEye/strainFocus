@@ -107,7 +107,7 @@ group of the position (we group all the collinear positions together)
 6. box plot (regression) or stacked bar plot (classification) for top positions of each model.
 
 ## Demo ##
-The detailed otions will come soon!!!
+The detailed options will come soon!!!
 ```commandline
 strainFocus --input myReads1.fastq --output strainFocus_demo_output
 ```
